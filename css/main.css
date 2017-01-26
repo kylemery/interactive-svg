@@ -1,0 +1,27 @@
+#left-eye {
+  animation: look 1.5s infinite linear alternate;
+}
+
+#right-eye {
+  animation: look 1.5s infinite linear alternate;
+}
+
+@keyframes look {
+
+  0% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+#left-ear, #right-ear {
+  transform: translateY(0);
+  transition: 1s linear;
+}
+
+svg:hover #left-ear, svg:hover #right-ear {
+  transform: translateY(-10px);
+}
